@@ -2,37 +2,166 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border: 1px solid;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  letter-spacing: 10px;
+  background-color: bisque;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header span,
+b {
+  padding: 4px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0.1px rgb(166, 166, 166);
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.deleteImg {
+  width: 30px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.deleteImg:active {
+  transition: 0.09s;
+  transform: scale(0.9);
+}
+
+.userNameWithIconVosstanovleniya {
+  width: 220px;
+  padding: 7px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0.1px rgb(221, 221, 221);
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+del {
+  width: 150px;
+}
+
+.iconVosstanovleniya {
+  width: 22px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.iconVosstanovleniya:active {
+  transition: 0.09s;
+  transform: scale(0.9);
+}
+
+.toRunWithDeleteImg {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spinner {
+  margin-top: 300px;
+}
+
+.aboutUser {
+  padding: 30px 0;
+  width: 700px;
+  margin: 10px auto;
+  box-shadow: 0 0 15px 0.1px rgb(238, 238, 238);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  cursor: pointer;
+  width: 200px;
+  padding: 7px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0.1px rgb(237, 237, 237);
+  margin-top: 17px;
+}
+
+.userName:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+.userName:active {
+  transform: scale(0.9);
+}
+
+.users {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.aboutUser b {
+  margin-top: 20px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+hr {
+  color: black;
+}
+
+button {
+  width: 100px;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+button:hover {
+  background-color: rgb(70, 70, 70);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:active {
+  transition: 0.09s;
+  transform: scale(0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 60%;
+  z-index: 10;
+}
+
+.modalContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalChildren {
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-color: white;
+}
+
+.buttons {
+  width: 250px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
